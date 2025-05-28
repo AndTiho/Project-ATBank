@@ -16,3 +16,10 @@ def mask_account_card(account_data: str) -> Any:
         return None
 
 
+def get_date(date: str) -> str:
+    get_data: list = list(date)
+    year: str = "".join(get_data[0:4])
+    month: str = "".join(get_data[5:7])
+    day: str = "".join(get_data[8:10])
+    return day + "." + month + "." + year
+
