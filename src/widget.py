@@ -25,4 +25,3 @@ def get_date(date: str) -> str:
     month: str = "".join(get_data[5:7])
     day: str = "".join(get_data[8:10])
     return day + "." + month + "." + year
-
