@@ -4,6 +4,8 @@ from masks import get_mask_account, get_mask_card_number
 
 
 def mask_account_card(account_data: str) -> Any:
+    """Функция принимает строку с данными карты или счёта и возвращает
+    маску аккаунта карты банка"""
     full_data_list: list = account_data.split(" ")
     list_alpha: list = [i for i in full_data_list if i.isalpha()]
     list_digit: list = [i for i in full_data_list if i.isdigit()]
@@ -17,6 +19,7 @@ def mask_account_card(account_data: str) -> Any:
 
 
 def get_date(date: str) -> str:
+    """Функция для отделения календарной даты от входящей строки с датой"""
     get_data: list = list(date)
     year: str = "".join(get_data[0:4])
     month: str = "".join(get_data[5:7])
