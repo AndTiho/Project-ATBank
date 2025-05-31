@@ -3,10 +3,12 @@ def filter_by_state(users_data_list: list[dict], state: str = "EXECUTED") -> lis
     Функция создаёт новый список из заданного списка фильтруя по заданному значению
     """
     filtered_users_list: list = list()
+
     for user in users_data_list:
         for key, value in user.items():
             if value == state:
                 filtered_users_list.append(user)
+
     return filtered_users_list
 
 
