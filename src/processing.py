@@ -12,9 +12,9 @@ def filter_by_state(users_data_list: list[dict], state: str = "EXECUTED") -> lis
     return filtered_users_list
 
 
-def sort_by_date(user_data_list: list[dict], sort_by: bool = True) -> list[dict]:
+def sort_by_date(users_data_list: list[dict], sort_by: bool = True) -> list[dict]:
     """
     Функция для сортировки данных пользователя по дате
     """
-    sorted_user_list: list = sorted(user_data_list, key=lambda user_data: user_data["date"], reverse=sort_by)
-    return sorted_user_list
+    sorted_users_list: list = sorted(users_data_list, key=lambda user_data: user_data["date"], reverse=sort_by)
+    return sorted_users_list
