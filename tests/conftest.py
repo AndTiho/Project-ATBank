@@ -54,7 +54,7 @@ def not_list():
 
 @pytest.fixture
 def empty_data():
-    return " "
+    return ""
 
 
 @pytest.fixture
