@@ -1,5 +1,6 @@
 import pytest
 
+
 # Для processing
 @pytest.fixture
 def empty_list():
@@ -50,7 +51,9 @@ def no_data_list():
 def not_list():
     return 0
 
-#Для widget
+
+# Для widget
+
 
 @pytest.fixture
 def empty_data():
