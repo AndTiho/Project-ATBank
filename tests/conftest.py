@@ -1,6 +1,6 @@
 import pytest
 
-
+# Для processing
 @pytest.fixture
 def empty_list():
     return [{}]
@@ -49,3 +49,14 @@ def no_data_list():
 @pytest.fixture
 def not_list():
     return 0
+
+#Для widget
+
+@pytest.fixture
+def empty_data():
+    return " "
+
+
+@pytest.fixture
+def letters_string():
+    return "Был бы я программист, но"

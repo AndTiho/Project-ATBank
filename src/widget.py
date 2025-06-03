@@ -6,16 +6,18 @@ from src.masks import get_mask_account, get_mask_card_number
 def mask_account_card(account_data: str) -> Any:
     """Функция принимает строку с данными карты или счёта и возвращает
     маску аккаунта карты банка"""
-    full_data_list: list = account_data.split(" ")
-    list_alpha: list = [i for i in full_data_list if i.isalpha()]
-    list_digit: list = [i for i in full_data_list if i.isdigit()]
-
-    if len(list_digit[0]) == 16:
-        return " ".join(list_alpha) + " " + get_mask_card_number("".join(list_digit))
-    elif len(list_digit[0]) == 20:
-        return " ".join(list_alpha) + " " + get_mask_account("".join(list_digit))
+    if isinstance(account_data, str):
+        full_data_list: list = account_data.split(" ")
+        list_alpha: list = [i for i in full_data_list if i.isalpha()]
+        list_digit: list = [i for i in full_data_list if i.isdigit()]
     else:
-        return None
+        return "Не корректно введены данные"
+    if len(list_digit) > 0:
+        if len(list_digit[0]) == 16:
+            return " ".join(list_alpha) + " " + get_mask_card_number("".join(list_digit))
+        elif len(list_digit[0]) == 20:
+            return " ".join(list_alpha) + " " + get_mask_account("".join(list_digit))
+    return "Не корректно введены данные"
 
 
 def get_date(date: str) -> str:
@@ -24,4 +26,7 @@ def get_date(date: str) -> str:
     year: str = "".join(get_data[0:4])
     month: str = "".join(get_data[5:7])
     day: str = "".join(get_data[8:10])
-    return day + "." + month + "." + year
+    if year.isdigit() and month.isdigit() and day.isdigit():
+        return f"{day}.{month}.{year}"
+    else:
+        return "Не корректно введены данные"

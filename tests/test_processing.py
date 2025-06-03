@@ -1,7 +1,7 @@
 from src.processing import filter_by_state, sort_by_date
 
 
-# Для фильтра
+# Для функции фильтрации по значению
 def test_by_state(my_list):
     assert filter_by_state(my_list) == [
         {"id": 41428829, "state": "EXECUTED", "date": "2019-07-03T18:35:29.512364"},
@@ -29,7 +29,7 @@ def test_not_list_filter(not_list):
     assert filter_by_state(not_list) == "Не корректно введены данные"
 
 
-# Для сорта
+# Для функции сортировки по дате
 def test_no_data_list(no_data_list: list):
     assert sort_by_date(no_data_list) == "Не корректно введены данные"
 
