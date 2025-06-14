@@ -2,6 +2,10 @@ from typing import Any, Generator
 
 
 def filter_by_currency(transactions: list[dict], value: str) -> Generator[Any, Any, None]:
+    """ Функция, которая принимает на вход список словарей, представляющих транзакции.
+    Возвращает итератор, который поочередно выдает транзакции,
+    где валюта операции соответствует заданной (например, USD).
+    """
     gen_filter_by_currency = filter(
         lambda data: data.get("operationAmount", {}).get("currency", {}).get("code") == value, transactions
     )
@@ -10,6 +14,8 @@ def filter_by_currency(transactions: list[dict], value: str) -> Generator[Any, A
 
 
 def transaction_descriptions(transactions: list[dict]) -> Generator[Any, Any, None]:
+    """ Генератор, который принимает список словарей с транзакциями
+     и возвращает описание каждой операции по очереди."""
     for transaction in transactions:
         if transaction.get("description"):
             yield transaction["description"]
@@ -18,6 +24,8 @@ def transaction_descriptions(transactions: list[dict]) -> Generator[Any, Any, No
 
 
 def card_number_generator(start: int, end: int) -> Generator[str, Any, None]:
+    """Генератор, который выдает номера банковских карт в формате: XXXX XXXX XXXX XXXX, где X— цифра номера карты.
+    Генератор должен принимать начальное и конечное значения для генерации диапазона номеров."""
     if not isinstance(start, int) and not isinstance(end, int):
         yield "Некорректные параметры диапазона"
     if start < 0 or end < 0 or start > end:
