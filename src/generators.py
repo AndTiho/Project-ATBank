@@ -2,22 +2,30 @@ from typing import Any, Generator
 
 
 def filter_by_currency(transactions: list[dict], value: str) -> Generator[Any, Any, None]:
-    gen_filter_by_currency = filter(lambda data: data["operationAmount"]["currency"]["code"] == value, transactions)
+    gen_filter_by_currency = filter(
+        lambda data: data.get("operationAmount", {}).get("currency", {}).get("code") == value, transactions
+    )
     for feltered_value in gen_filter_by_currency:
         yield feltered_value
 
 
 def transaction_descriptions(transactions: list[dict]) -> Generator[Any, Any, None]:
-    for description in transactions:
-        yield description["description"]
+    for transaction in transactions:
+        if transaction.get("description"):
+            yield transaction["description"]
+        else:
+            yield "В данных нет записи о виде транзакции"
 
 
 def card_number_generator(start: int, end: int) -> Generator[str, Any, None]:
+    if not isinstance(start, int) and not isinstance(end, int):
+        yield "Некорректные параметры диапазона"
     if start < 0 or end < 0 or start > end:
-        raise ValueError("Некорректные параметры диапазона")
+        yield "Некорректные параметры диапазона"
     for x in range(start, end + 1):
         x_str = str(x)
         if len(x_str) < 16:
             x_str = (16 - len(x_str)) * "0" + x_str
-        yield " ".join("".join(x_str[i : i + 4]) for i in range(0, len(x_str), 4))
-
+            yield " ".join("".join(x_str[i : i + 4]) for i in range(0, len(x_str), 4))
+        else:
+            yield "Превышена max длинна в параметрах"
