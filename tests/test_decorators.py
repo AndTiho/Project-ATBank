@@ -1,3 +1,4 @@
+import pytest
 from src.decorators import log
 
 # Тест успешного выполнения функции без файла лога
@@ -21,7 +22,8 @@ def test_exception_no_file(capsys):
     def func(x, y):
         return x / y
 
-    func(1, 0)
+    with pytest.raises(ZeroDivisionError):
+        func(1, 0)
 
     captured = capsys.readouterr()
     output = captured.out
@@ -47,14 +49,15 @@ def test_function_with_file(tmp_path):
         assert "func ok" in log_content
         assert "Ended at" in log_content
 
-# Тест обработки исключения c записью в файл лога
+# Тест обработки исключения с записью в файл лога
 def test_exception_with_file(tmp_path):
     log_file = tmp_path / "test_log.txt"
     @log(filename=str(log_file))
     def func(x, y):
         return x / y
 
-    func(1, 0)
+    with pytest.raises(ZeroDivisionError):
+        func(1, 0)
 
     with open(log_file, 'r') as f:
         log_content = f.read()
