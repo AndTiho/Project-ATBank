@@ -1,0 +1,8 @@
+
+Start at 2025-06-19 18:15:20.844601
+my_function error : division by zero. Inputs: (1, 0), {}
+Ended at 2025-06-19 18:15:20.844605
+
+Start at 2025-06-19 18:15:20.848409
+my_function error : division by zero. Inputs: (1, 0), {}
+Ended at 2025-06-19 18:15:20.848411
