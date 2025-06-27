@@ -1,0 +1,12 @@
+
+Start at 2025-06-19 17:53:58.532192
+my_function error : division by zero. Inputs: (1, 0), {}
+Ended at 2025-06-19 17:53:58.532204
+
+Start at 2025-06-19 18:06:09.766948
+my_function ok. Result = 3
+Ended at 2025-06-19 18:06:09.766959
+
+Start at 2025-06-19 18:13:55.770419
+my_function error : division by zero. Inputs: (1, 0), {}
+Ended at 2025-06-19 18:13:55.770431
