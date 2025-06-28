@@ -13,10 +13,11 @@ def json_to_python_data(file_path: str) -> list:
             except json.JSONDecodeError:
                 print("Ошибка декодирования файла, возвращаем пустой список")
                 return python_data
+    except TypeError:
+        print("Не верно указан путь")
+        return python_data
     except FileNotFoundError:
         print("Файл не найден, возвращаем пустой список")
         return python_data
     return python_data
 
-
-# print(json_to_python_data('../data/operations.json'))
