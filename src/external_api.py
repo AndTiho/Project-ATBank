@@ -14,8 +14,8 @@ headers = {"apikey": api_key}
 
 def operation_amount(transaction_data: dict) -> float:
     """
-    Функция для подсчёта общей суммы всех транзакций с конвертацией в RUB
-    с использованием AIP сайта конвертации валют
+   Функция для вывода суммы транзакции с конвертацией USD, EUR в RUB с использованием
+    AIP сайта конвертации валют.
     """
     if not isinstance(transaction_data, dict):
         raise TypeError("Не корректные данные")
