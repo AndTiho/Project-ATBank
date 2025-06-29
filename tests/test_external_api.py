@@ -1,7 +1,7 @@
-from unittest.mock import Mock, patch, mock_open
+from unittest.mock import patch
 import pytest
 import requests
-from requests.exceptions import ConnectionError, HTTPError, Timeout
+from requests.exceptions import HTTPError
 
 from src.external_api import operation_amount
 
@@ -33,16 +33,11 @@ def test_unsupported_currency(for_converter_jpy):
 
 # Тест для проверки ошибки подключения
 def test_connection_error(one_trans_data):
-#     with patch('requests.get') as mocked_get:
-#         mocked_get.side_effect = requests.exceptions.ConnectionError()
-#         with pytest.raises(ConnectionError) as exc_info:
-#             operation_amount(one_trans_data)
-#         assert str(exc_info.value) == "Ошибка подключения. Проверьте интернет-соединение"
-    try:
-        operation_amount(one_trans_data)
-    except ConnectionError as e:
-        assert str(e) == "Ошибка подключения. Проверьте интернет-соединение"
-
+    with patch('requests.get') as mocked_get:
+        mocked_get.side_effect = requests.exceptions.ConnectionError()
+        with pytest.raises(ConnectionError) as exc_info:
+            operation_amount(one_trans_data)
+        assert str(exc_info.value) == "Ошибка подключения. Проверьте интернет-соединение"
 
 # Тест для проверки HTTP ошибки
 def test_http_error(one_trans_data):
