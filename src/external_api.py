@@ -3,6 +3,7 @@ from typing import Dict
 
 import requests
 from dotenv import load_dotenv
+from requests import HTTPError
 
 load_dotenv()
 api_key = os.getenv("API_KEY")
@@ -16,7 +17,8 @@ def operation_amount(transaction_data: dict) -> float:
     Функция для подсчёта общей суммы всех транзакций с конвертацией в RUB
     с использованием AIP сайта конвертации валют
     """
-    amount_sum: float = 0.0  # Тут у нас переменная для конечного итога выводимого на баланс юзера
+    if not isinstance(transaction_data, dict):
+        raise TypeError("Не корректные данные")
     url = "http://api.apilayer.com/exchangerates_data/convert"  # Тут адрес на конвертер
     headers = {"apikey": api_key}  # Тут храним наш ключ
 
@@ -31,7 +33,7 @@ def operation_amount(transaction_data: dict) -> float:
             response = requests.get(url, headers=headers, params=payload)
             response.raise_for_status()
             result = response.json()
-            amount_sum = float(result.get("result"))
+            amount_sum = result.get("result")
 
         # Работаем с EUR
         elif currency_code == "EUR":
@@ -39,7 +41,7 @@ def operation_amount(transaction_data: dict) -> float:
             response = requests.get(url, headers=headers, params=payload)
             response.raise_for_status()
             result = response.json()
-            amount_sum = float(result.get("result"))
+            amount_sum = result.get("result")
 
         # Работаем с RUB
         elif currency_code == "RUB":
@@ -49,12 +51,12 @@ def operation_amount(transaction_data: dict) -> float:
             raise ValueError(f"Неподдерживаемая валюта: {currency_code}")
 
     except requests.exceptions.ConnectionError:
-        print("Ошибка подключения. Проверьте интернет-соединение")
+        raise ConnectionError("Ошибка подключения. Проверьте интернет-соединение")
     except requests.exceptions.HTTPError:
-        print("HTTP ошибка. Проверьте URL или API ключ")
+        raise HTTPError("HTTP ошибка. Проверьте URL или API ключ")
     except requests.exceptions.Timeout:
-        print("Превышено время ожидания. Проверьте интернет-соединение")
+        raise TimeoutError("Превышено время ожидания. Проверьте интернет-соединение")
     except ValueError as e:
-        print(f"Ошибка: {e}")
+        raise ValueError(f"Ошибка: {e}")
 
-    return amount_sum
+    return float(amount_sum)
