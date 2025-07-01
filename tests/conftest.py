@@ -1,5 +1,8 @@
 import pytest
-
+import requests
+from requests.exceptions import ConnectionError
+from requests.exceptions import HTTPError
+from requests.exceptions import Timeout
 
 # Для processing
 @pytest.fixture
@@ -222,3 +225,47 @@ def transactions_data_no_descr():
             "to": "Счет 14211924144426031657"
         }
     ]
+
+# Для Функции конвертера валют
+
+@pytest.fixture
+def for_converter_rub():
+    return {
+            "id": 939719570,
+            "state": "EXECUTED",
+            "date": "2018-06-30T02:08:58.425572",
+            "operationAmount": {
+                "amount": "1.07",
+                "currency": {
+                    "name": "RUB",
+                    "code": "RUB"
+                }
+            },
+            "description": "Перевод организации",
+            "from": "Счет 75106830613657916952",
+            "to": "Счет 11776614605963066702"}
+
+@pytest.fixture
+def for_converter_jpy():
+    return {
+            "id": 939719570,
+            "state": "EXECUTED",
+            "date": "2018-06-30T02:08:58.425572",
+            "operationAmount": {
+                "amount": "1.07",
+                "currency": {
+                    "name": "JPY",
+                    "code": "JPY"
+                }
+            },
+            "description": "Перевод организации",
+            "from": "Счет 75106830613657916952",
+            "to": "Счет 11776614605963066702"}
+
+
+@pytest.fixture
+def one_trans_data():
+    return {
+        "operationAmount": {
+            "amount": "100",
+            "currency": {"code": "USD"}}}
