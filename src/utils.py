@@ -10,7 +10,7 @@ logging.basicConfig(
     encoding="utf-8",
 )
 
-json_to_python_logger = logging.getLogger("app.json_to_python")
+json_to_python_logger = logging.getLogger("app.utils_json_to_python_data")
 
 
 def json_to_python_data(file_path: str) -> Any:

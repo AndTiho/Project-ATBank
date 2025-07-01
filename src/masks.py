@@ -8,8 +8,8 @@ logging.basicConfig(
     encoding="utf-8",
 )
 
-mask_account_logger = logging.getLogger("app.mask_acc")
-mask_card_logger = logging.getLogger("app.mask_card")
+mask_account_logger = logging.getLogger("app.masks_get_mask_card_number")
+mask_card_logger = logging.getLogger("app.masks_get_mask_account")
 
 
 def get_mask_card_number(card_number: str) -> str:
