@@ -1,8 +1,4 @@
 import pytest
-import requests
-from requests.exceptions import ConnectionError
-from requests.exceptions import HTTPError
-from requests.exceptions import Timeout
 
 # Для processing
 @pytest.fixture

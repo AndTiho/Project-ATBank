@@ -18,6 +18,7 @@ def test_filter_by_currency_usd(transactions_data):
           "from": "Счет 75106830613657916952",
           "to": "Счет 11776614605963066702"
       }
+
     assert next(generator) == {
               "id": 142264268,
               "state": "EXECUTED",
