@@ -1,4 +1,3 @@
-from unittest import mock
 from src.utils import json_to_python_data
 import pytest
 from unittest.mock import patch, mock_open
