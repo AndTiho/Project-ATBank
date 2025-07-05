@@ -19,9 +19,6 @@ def csv_to_python_data(file_path: str) -> Any:
     except OSError:
         print("Ошибка декодирования файла, возвращаем пустой список.")
         return []
-    except TypeError:
-        print("Не верно указан путь. Возвращаем пустой список.")
-        return []
     return csv_list
 
 
@@ -36,13 +33,7 @@ def excel_to_python_data(file_path: str) -> Any:
     try:
         df = pd.read_excel(file_path)
         excel_data = df.to_dict("records")
-    except ValueError:
-        print("Не верно указан путь. Возвращаем пустой список.")
-        return []
     except OSError:
         print("Ошибка декодирования файла, возвращаем пустой список.")
-        return []
-    except UnboundLocalError:
-        print("Не верно указан путь. Возвращаем пустой список.")
         return []
     return list(excel_data)
