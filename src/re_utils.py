@@ -1,8 +1,9 @@
 import re
 from collections import Counter
-# from csv_excel_utils import csv_to_python_data
+
 
 def process_bank_search(data: list[dict], search: str) -> list[dict]:
+    """Функция для поиска заданной строки в списке словарей"""
     if not isinstance(data, list):
         raise TypeError("Входные данные не являются списком")
     new_dict = []
@@ -14,6 +15,7 @@ def process_bank_search(data: list[dict], search: str) -> list[dict]:
 
 
 def process_bank_operations(data: list[dict], categories: list) -> dict:
+    """Функция для подсчёта данных в списке словарей по заданным категориям"""
     if not isinstance(data, list):
         raise TypeError("Входные данные не являются списком")
     new_dict: dict = {}
@@ -23,7 +25,3 @@ def process_bank_operations(data: list[dict], categories: list) -> dict:
         result = counter[i]
         new_dict[i] = result
     return new_dict
-
-# need_data = csv_to_python_data('./data/transactions.csv')
-# need_data = []
-# print(process_bank_operations(need_data, ["Открытие вклада"]))
