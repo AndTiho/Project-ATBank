@@ -1,9 +1,10 @@
 import pytest
-from src.re_utils import process_bank_search, process_bank_operations
+
+from src.re_utils import process_bank_operations, process_bank_search
 
 
 def test_process_bank_search(transactions_data):
-    assert process_bank_search(transactions_data, 'Перевод организации') == [
+    assert process_bank_search(transactions_data, "Перевод организации") == [
         {
             "id": 939719570,
             "state": "EXECUTED",
@@ -24,20 +25,30 @@ def test_process_bank_search(transactions_data):
         },
     ]
 
+
 def test_process_bank_search_empty_list(empty_list):
     assert process_bank_search(empty_list, "Перевод организации") == []
+
 
 def test_process_bank_search_invalid_data_type(not_list):
     with pytest.raises(TypeError) as exc_info:
         process_bank_search(not_list, "Перевод организации")
     assert "Входные данные не являются списком" in str(exc_info.value)
 
+
 def test_process_bank_operations(transactions_data):
-    assert (process_bank_operations(transactions_data, ['Перевод организации','Перевод с карты на карту'])
-            == {'Перевод организации': 2, 'Перевод с карты на карту': 1})
+    assert process_bank_operations(transactions_data, ["Перевод организации", "Перевод с карты на карту"]) == {
+        "Перевод организации": 2,
+        "Перевод с карты на карту": 1,
+    }
+
 
 def test_process_bank_operations_empty_list(empty_list):
-    assert process_bank_operations(empty_list, ['Перевод организации','Перевод с карты на карту']) == {'Перевод организации': 0, 'Перевод с карты на карту': 0}
+    assert process_bank_operations(empty_list, ["Перевод организации", "Перевод с карты на карту"]) == {
+        "Перевод организации": 0,
+        "Перевод с карты на карту": 0,
+    }
+
 
 def test_process_bank_operations_invalid_data_type(not_list):
     with pytest.raises(TypeError) as exc_info:

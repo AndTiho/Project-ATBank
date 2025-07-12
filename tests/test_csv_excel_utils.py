@@ -1,7 +1,9 @@
-from src.csv_excel_utils import csv_to_python_data, excel_to_python_data
-from unittest.mock import patch, mock_open
-import pytest
+from unittest.mock import mock_open, patch
+
 import pandas as pd
+import pytest
+
+from src.csv_excel_utils import csv_to_python_data, excel_to_python_data
 
 
 @pytest.mark.parametrize(

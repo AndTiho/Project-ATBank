@@ -203,4 +203,4 @@ def one_trans_data():
 @pytest.fixture
 def csv_data():
     return """id;state;date;amount;currency_name;currency_code;from;to;description
-650703;EXECUTED;2023-09-05T11:30:32Z;16210;Sol;PEN;Счет 58803664561298323391;Счет 39745660563456619397;Перевод организации"""
+650703;EXECUTED;2023-09-05T11:30:32Z;16210;Sol;PEN;Счет 58803664561298323391;Счет 39745660563456619397;Перевод организации"""  # noqa: E501
