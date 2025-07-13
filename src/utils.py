@@ -5,7 +5,7 @@ from typing import Any
 logging.basicConfig(
     level=logging.DEBUG,
     format="%(asctime)s - %(name)s - %(levelname)s - %(message)s",
-    filename="../logs/utils.log",
+    filename="./logs/utils.log",
     filemode="w",
     encoding="utf-8",
 )

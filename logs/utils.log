@@ -1,2 +1,177 @@
-2025-07-01 17:21:33,850 - app.utils_json_to_python_data - INFO - Начало работы программы
-2025-07-01 17:21:33,850 - app.utils_json_to_python_data - WARNING - Файл не найден. Программа возвращает пустой список.
+2025-07-11 06:29:03,315 - app.masks_get_mask_account - INFO - Запуск модуля
+2025-07-11 06:29:03,315 - app.masks_get_mask_account - INFO - Получение данных 0773092093872450
+2025-07-11 06:29:03,315 - app.masks_get_mask_account - INFO - Функция отработала корректно. Завершение работы
+2025-07-11 06:29:03,315 - app.masks_get_mask_account - INFO - Запуск модуля
+2025-07-11 06:29:03,315 - app.masks_get_mask_account - INFO - Получение данных 8602781449570491
+2025-07-11 06:29:03,315 - app.masks_get_mask_account - INFO - Функция отработала корректно. Завершение работы
+2025-07-11 06:29:03,315 - app.masks_get_mask_account - INFO - Запуск модуля
+2025-07-11 06:29:03,315 - app.masks_get_mask_account - INFO - Получение данных 3093124722348405
+2025-07-11 06:29:03,315 - app.masks_get_mask_account - INFO - Функция отработала корректно. Завершение работы
+2025-07-11 06:29:03,315 - app.masks_get_mask_account - INFO - Запуск модуля
+2025-07-11 06:29:03,315 - app.masks_get_mask_account - INFO - Получение данных 6950002720800411
+2025-07-11 06:29:03,315 - app.masks_get_mask_account - INFO - Функция отработала корректно. Завершение работы
+2025-07-11 06:29:03,316 - app.masks_get_mask_card_number - INFO - Запуск работы модуля.
+2025-07-11 06:29:03,316 - app.masks_get_mask_card_number - INFO - Программа отработала корректно. Завершение работы
+2025-07-11 06:29:03,316 - app.masks_get_mask_card_number - INFO - Запуск работы модуля.
+2025-07-11 06:29:03,316 - app.masks_get_mask_card_number - INFO - Программа отработала корректно. Завершение работы
+2025-07-11 06:29:03,316 - app.masks_get_mask_account - INFO - Запуск модуля
+2025-07-11 06:29:03,316 - app.masks_get_mask_account - INFO - Получение данных 5313948287096164
+2025-07-11 06:29:03,316 - app.masks_get_mask_account - INFO - Функция отработала корректно. Завершение работы
+2025-07-11 06:29:03,316 - app.masks_get_mask_account - INFO - Запуск модуля
+2025-07-11 06:29:03,316 - app.masks_get_mask_account - INFO - Получение данных 0329774489991288
+2025-07-11 06:29:03,316 - app.masks_get_mask_account - INFO - Функция отработала корректно. Завершение работы
+2025-07-11 06:29:03,316 - app.masks_get_mask_account - INFO - Запуск модуля
+2025-07-11 06:29:03,316 - app.masks_get_mask_account - INFO - Получение данных 5289343085624249
+2025-07-11 06:29:03,316 - app.masks_get_mask_account - INFO - Функция отработала корректно. Завершение работы
+2025-07-11 06:29:03,316 - app.masks_get_mask_card_number - INFO - Запуск работы модуля.
+2025-07-11 06:29:03,316 - app.masks_get_mask_card_number - INFO - Программа отработала корректно. Завершение работы
+2025-07-11 06:29:03,316 - app.masks_get_mask_account - INFO - Запуск модуля
+2025-07-11 06:29:03,316 - app.masks_get_mask_account - INFO - Получение данных 6902837737884644
+2025-07-11 06:29:03,316 - app.masks_get_mask_account - INFO - Функция отработала корректно. Завершение работы
+2025-07-11 06:29:03,316 - app.masks_get_mask_account - INFO - Запуск модуля
+2025-07-11 06:29:03,316 - app.masks_get_mask_account - INFO - Получение данных 1368443024115273
+2025-07-11 06:29:03,316 - app.masks_get_mask_account - INFO - Функция отработала корректно. Завершение работы
+2025-07-11 06:29:03,316 - app.masks_get_mask_account - INFO - Запуск модуля
+2025-07-11 06:29:03,316 - app.masks_get_mask_account - INFO - Получение данных 9698316448168820
+2025-07-11 06:29:03,317 - app.masks_get_mask_account - INFO - Функция отработала корректно. Завершение работы
+2025-07-11 06:29:03,317 - app.masks_get_mask_card_number - INFO - Запуск работы модуля.
+2025-07-11 06:29:03,317 - app.masks_get_mask_card_number - INFO - Программа отработала корректно. Завершение работы
+2025-07-11 06:29:03,317 - app.masks_get_mask_account - INFO - Запуск модуля
+2025-07-11 06:29:03,317 - app.masks_get_mask_account - INFO - Получение данных 8455447150087314
+2025-07-11 06:29:03,317 - app.masks_get_mask_account - INFO - Функция отработала корректно. Завершение работы
+2025-07-11 06:29:03,317 - app.masks_get_mask_card_number - INFO - Запуск работы модуля.
+2025-07-11 06:29:03,317 - app.masks_get_mask_card_number - INFO - Программа отработала корректно. Завершение работы
+2025-07-11 06:29:03,317 - app.masks_get_mask_account - INFO - Запуск модуля
+2025-07-11 06:29:03,317 - app.masks_get_mask_account - INFO - Получение данных 8817383202472795
+2025-07-11 06:29:03,317 - app.masks_get_mask_account - INFO - Функция отработала корректно. Завершение работы
+2025-07-11 06:29:03,317 - app.masks_get_mask_account - INFO - Запуск модуля
+2025-07-11 06:29:03,317 - app.masks_get_mask_account - INFO - Получение данных 3942175254816690
+2025-07-11 06:29:03,317 - app.masks_get_mask_account - INFO - Функция отработала корректно. Завершение работы
+2025-07-11 06:29:03,317 - app.masks_get_mask_card_number - INFO - Запуск работы модуля.
+2025-07-11 06:29:03,317 - app.masks_get_mask_card_number - INFO - Программа отработала корректно. Завершение работы
+2025-07-11 06:29:03,317 - app.masks_get_mask_card_number - INFO - Запуск работы модуля.
+2025-07-11 06:29:03,317 - app.masks_get_mask_card_number - INFO - Программа отработала корректно. Завершение работы
+2025-07-11 06:29:03,317 - app.masks_get_mask_account - INFO - Запуск модуля
+2025-07-11 06:29:03,317 - app.masks_get_mask_account - INFO - Получение данных 6574691179829422
+2025-07-11 06:29:03,317 - app.masks_get_mask_account - INFO - Функция отработала корректно. Завершение работы
+2025-07-11 06:29:03,317 - app.masks_get_mask_account - INFO - Запуск модуля
+2025-07-11 06:29:03,317 - app.masks_get_mask_account - INFO - Получение данных 4659403386698758
+2025-07-11 06:29:03,317 - app.masks_get_mask_account - INFO - Функция отработала корректно. Завершение работы
+2025-07-11 06:29:03,317 - app.masks_get_mask_account - INFO - Запуск модуля
+2025-07-11 06:29:03,317 - app.masks_get_mask_account - INFO - Получение данных 7725500610751579
+2025-07-11 06:29:03,318 - app.masks_get_mask_account - INFO - Функция отработала корректно. Завершение работы
+2025-07-11 06:29:03,318 - app.masks_get_mask_account - INFO - Запуск модуля
+2025-07-11 06:29:03,318 - app.masks_get_mask_account - INFO - Получение данных 8189486607683162
+2025-07-11 06:29:03,318 - app.masks_get_mask_account - INFO - Функция отработала корректно. Завершение работы
+2025-07-11 06:29:03,318 - app.masks_get_mask_card_number - INFO - Запуск работы модуля.
+2025-07-11 06:29:03,318 - app.masks_get_mask_card_number - INFO - Программа отработала корректно. Завершение работы
+2025-07-11 06:29:03,318 - app.masks_get_mask_card_number - INFO - Запуск работы модуля.
+2025-07-11 06:29:03,318 - app.masks_get_mask_card_number - INFO - Программа отработала корректно. Завершение работы
+2025-07-11 06:29:03,318 - app.masks_get_mask_account - INFO - Запуск модуля
+2025-07-11 06:29:03,318 - app.masks_get_mask_account - INFO - Получение данных 7657178713716531
+2025-07-11 06:29:03,318 - app.masks_get_mask_account - INFO - Функция отработала корректно. Завершение работы
+2025-07-11 06:29:03,318 - app.masks_get_mask_account - INFO - Запуск модуля
+2025-07-11 06:29:03,318 - app.masks_get_mask_account - INFO - Получение данных 5442625865778510
+2025-07-11 06:29:03,318 - app.masks_get_mask_account - INFO - Функция отработала корректно. Завершение работы
+2025-07-11 06:29:03,318 - app.masks_get_mask_card_number - INFO - Запуск работы модуля.
+2025-07-11 06:29:03,318 - app.masks_get_mask_card_number - INFO - Программа отработала корректно. Завершение работы
+2025-07-11 06:29:03,318 - app.masks_get_mask_account - INFO - Запуск модуля
+2025-07-11 06:29:03,318 - app.masks_get_mask_account - INFO - Получение данных 3723527446109611
+2025-07-11 06:29:03,318 - app.masks_get_mask_account - INFO - Функция отработала корректно. Завершение работы
+2025-07-11 06:29:03,318 - app.masks_get_mask_account - INFO - Запуск модуля
+2025-07-11 06:29:03,318 - app.masks_get_mask_account - INFO - Получение данных 4201111974501655
+2025-07-11 06:29:03,318 - app.masks_get_mask_account - INFO - Функция отработала корректно. Завершение работы
+2025-07-11 06:29:03,318 - app.masks_get_mask_card_number - INFO - Запуск работы модуля.
+2025-07-11 06:29:03,318 - app.masks_get_mask_card_number - INFO - Программа отработала корректно. Завершение работы
+2025-07-11 06:29:03,318 - app.masks_get_mask_card_number - INFO - Запуск работы модуля.
+2025-07-11 06:29:03,318 - app.masks_get_mask_card_number - INFO - Программа отработала корректно. Завершение работы
+2025-07-11 06:29:03,319 - app.masks_get_mask_account - INFO - Запуск модуля
+2025-07-11 06:29:03,319 - app.masks_get_mask_account - INFO - Получение данных 4205969069978141
+2025-07-11 06:29:03,319 - app.masks_get_mask_account - INFO - Функция отработала корректно. Завершение работы
+2025-07-11 06:29:03,319 - app.masks_get_mask_account - INFO - Запуск модуля
+2025-07-11 06:29:03,319 - app.masks_get_mask_account - INFO - Получение данных 3182665825206884
+2025-07-11 06:29:03,319 - app.masks_get_mask_account - INFO - Функция отработала корректно. Завершение работы
+2025-07-11 06:29:03,319 - app.masks_get_mask_account - INFO - Запуск модуля
+2025-07-11 06:29:03,319 - app.masks_get_mask_account - INFO - Получение данных 2343953148883158
+2025-07-11 06:29:03,319 - app.masks_get_mask_account - INFO - Функция отработала корректно. Завершение работы
+2025-07-11 06:29:03,319 - app.masks_get_mask_account - INFO - Запуск модуля
+2025-07-11 06:29:03,319 - app.masks_get_mask_account - INFO - Получение данных 8400869379923599
+2025-07-11 06:29:03,319 - app.masks_get_mask_account - INFO - Функция отработала корректно. Завершение работы
+2025-07-11 06:29:03,319 - app.masks_get_mask_account - INFO - Запуск модуля
+2025-07-11 06:29:03,319 - app.masks_get_mask_account - INFO - Получение данных 1399159034596740
+2025-07-11 06:29:03,319 - app.masks_get_mask_account - INFO - Функция отработала корректно. Завершение работы
+2025-07-11 06:29:03,319 - app.masks_get_mask_card_number - INFO - Запуск работы модуля.
+2025-07-11 06:29:03,319 - app.masks_get_mask_card_number - INFO - Программа отработала корректно. Завершение работы
+2025-07-11 06:29:03,319 - app.masks_get_mask_account - INFO - Запуск модуля
+2025-07-11 06:29:03,319 - app.masks_get_mask_account - INFO - Получение данных 1563074999448104
+2025-07-11 06:29:03,319 - app.masks_get_mask_account - INFO - Функция отработала корректно. Завершение работы
+2025-07-11 06:29:03,319 - app.masks_get_mask_account - INFO - Запуск модуля
+2025-07-11 06:29:03,319 - app.masks_get_mask_account - INFO - Получение данных 6133882980108564
+2025-07-11 06:29:03,319 - app.masks_get_mask_account - INFO - Функция отработала корректно. Завершение работы
+2025-07-11 06:29:03,319 - app.masks_get_mask_account - INFO - Запуск модуля
+2025-07-11 06:29:03,319 - app.masks_get_mask_account - INFO - Получение данных 0560253835243874
+2025-07-11 06:29:03,319 - app.masks_get_mask_account - INFO - Функция отработала корректно. Завершение работы
+2025-07-11 06:29:03,319 - app.masks_get_mask_card_number - INFO - Запуск работы модуля.
+2025-07-11 06:29:03,319 - app.masks_get_mask_card_number - INFO - Программа отработала корректно. Завершение работы
+2025-07-11 06:29:03,320 - app.masks_get_mask_card_number - INFO - Запуск работы модуля.
+2025-07-11 06:29:03,320 - app.masks_get_mask_card_number - INFO - Программа отработала корректно. Завершение работы
+2025-07-11 06:29:03,320 - app.masks_get_mask_card_number - INFO - Запуск работы модуля.
+2025-07-11 06:29:03,320 - app.masks_get_mask_card_number - INFO - Программа отработала корректно. Завершение работы
+2025-07-11 06:29:03,320 - app.masks_get_mask_account - INFO - Запуск модуля
+2025-07-11 06:29:03,320 - app.masks_get_mask_account - INFO - Получение данных 7986449445672194
+2025-07-11 06:29:03,320 - app.masks_get_mask_account - INFO - Функция отработала корректно. Завершение работы
+2025-07-11 06:29:03,320 - app.masks_get_mask_account - INFO - Запуск модуля
+2025-07-11 06:29:03,320 - app.masks_get_mask_account - INFO - Получение данных 8862361645542151
+2025-07-11 06:29:03,320 - app.masks_get_mask_account - INFO - Функция отработала корректно. Завершение работы
+2025-07-11 06:29:03,320 - app.masks_get_mask_account - INFO - Запуск модуля
+2025-07-11 06:29:03,320 - app.masks_get_mask_account - INFO - Получение данных 8924432019137202
+2025-07-11 06:29:03,320 - app.masks_get_mask_account - INFO - Функция отработала корректно. Завершение работы
+2025-07-11 06:29:03,320 - app.masks_get_mask_account - INFO - Запуск модуля
+2025-07-11 06:29:03,320 - app.masks_get_mask_account - INFO - Получение данных 5653663363322651
+2025-07-11 06:29:03,320 - app.masks_get_mask_account - INFO - Функция отработала корректно. Завершение работы
+2025-07-11 06:29:03,320 - app.masks_get_mask_account - INFO - Запуск модуля
+2025-07-11 06:29:03,320 - app.masks_get_mask_account - INFO - Получение данных 0134021618597734
+2025-07-11 06:29:03,320 - app.masks_get_mask_account - INFO - Функция отработала корректно. Завершение работы
+2025-07-11 06:29:03,320 - app.masks_get_mask_account - INFO - Запуск модуля
+2025-07-11 06:29:03,320 - app.masks_get_mask_account - INFO - Получение данных 7974416741612242
+2025-07-11 06:29:03,320 - app.masks_get_mask_account - INFO - Функция отработала корректно. Завершение работы
+2025-07-11 06:29:03,320 - app.masks_get_mask_account - INFO - Запуск модуля
+2025-07-11 06:29:03,320 - app.masks_get_mask_account - INFO - Получение данных 3057946398768198
+2025-07-11 06:29:03,320 - app.masks_get_mask_account - INFO - Функция отработала корректно. Завершение работы
+2025-07-11 06:29:03,320 - app.masks_get_mask_account - INFO - Запуск модуля
+2025-07-11 06:29:03,320 - app.masks_get_mask_account - INFO - Получение данных 4035896941119221
+2025-07-11 06:29:03,320 - app.masks_get_mask_account - INFO - Функция отработала корректно. Завершение работы
+2025-07-11 06:29:03,321 - app.masks_get_mask_card_number - INFO - Запуск работы модуля.
+2025-07-11 06:29:03,321 - app.masks_get_mask_card_number - INFO - Программа отработала корректно. Завершение работы
+2025-07-11 06:29:03,321 - app.masks_get_mask_card_number - INFO - Запуск работы модуля.
+2025-07-11 06:29:03,321 - app.masks_get_mask_card_number - INFO - Программа отработала корректно. Завершение работы
+2025-07-11 06:29:03,321 - app.masks_get_mask_card_number - INFO - Запуск работы модуля.
+2025-07-11 06:29:03,321 - app.masks_get_mask_card_number - INFO - Программа отработала корректно. Завершение работы
+2025-07-11 06:29:03,321 - app.masks_get_mask_card_number - INFO - Запуск работы модуля.
+2025-07-11 06:29:03,321 - app.masks_get_mask_card_number - INFO - Программа отработала корректно. Завершение работы
+2025-07-11 06:29:03,321 - app.masks_get_mask_account - INFO - Запуск модуля
+2025-07-11 06:29:03,321 - app.masks_get_mask_account - INFO - Получение данных 9171903868456946
+2025-07-11 06:29:03,321 - app.masks_get_mask_account - INFO - Функция отработала корректно. Завершение работы
+2025-07-11 06:29:03,321 - app.masks_get_mask_account - INFO - Запуск модуля
+2025-07-11 06:29:03,321 - app.masks_get_mask_account - INFO - Получение данных 1486898442392527
+2025-07-11 06:29:03,321 - app.masks_get_mask_account - INFO - Функция отработала корректно. Завершение работы
+2025-07-11 06:29:03,321 - app.masks_get_mask_card_number - INFO - Запуск работы модуля.
+2025-07-11 06:29:03,321 - app.masks_get_mask_card_number - INFO - Программа отработала корректно. Завершение работы
+2025-07-11 06:29:03,321 - app.masks_get_mask_account - INFO - Запуск модуля
+2025-07-11 06:29:03,321 - app.masks_get_mask_account - INFO - Получение данных 4061237171643434
+2025-07-11 06:29:03,321 - app.masks_get_mask_account - INFO - Функция отработала корректно. Завершение работы
+2025-07-11 06:29:03,321 - app.masks_get_mask_account - INFO - Запуск модуля
+2025-07-11 06:29:03,321 - app.masks_get_mask_account - INFO - Получение данных 7539829899017635
+2025-07-11 06:29:03,321 - app.masks_get_mask_account - INFO - Функция отработала корректно. Завершение работы
+2025-07-11 06:29:03,321 - app.masks_get_mask_account - INFO - Запуск модуля
+2025-07-11 06:29:03,322 - app.masks_get_mask_account - INFO - Получение данных 8926691998863176
+2025-07-11 06:29:03,322 - app.masks_get_mask_account - INFO - Функция отработала корректно. Завершение работы
+2025-07-11 06:29:03,322 - app.masks_get_mask_account - INFO - Запуск модуля
+2025-07-11 06:29:03,322 - app.masks_get_mask_account - INFO - Получение данных 9331952063031046
+2025-07-11 06:29:03,322 - app.masks_get_mask_account - INFO - Функция отработала корректно. Завершение работы
+2025-07-11 06:29:03,322 - app.masks_get_mask_account - INFO - Запуск модуля
+2025-07-11 06:29:03,322 - app.masks_get_mask_account - INFO - Получение данных 9458117363112215
+2025-07-11 06:29:03,322 - app.masks_get_mask_account - INFO - Функция отработала корректно. Завершение работы
+2025-07-11 06:29:03,322 - app.masks_get_mask_account - INFO - Запуск модуля
+2025-07-11 06:29:03,322 - app.masks_get_mask_account - INFO - Получение данных 6335859532296628
+2025-07-11 06:29:03,322 - app.masks_get_mask_account - INFO - Функция отработала корректно. Завершение работы

@@ -8,7 +8,7 @@ from requests import HTTPError
 load_dotenv()
 api_key = os.getenv("API_KEY")
 
-url = "http://api.apilayer,com/exchangerates_data/convert"
+url = "http://api.apilayer.com/exchangerates_data/convert"
 headers = {"apikey": api_key}
 
 

@@ -2,8 +2,8 @@ from src.masks import get_mask_account, get_mask_card_number
 
 
 def mask_account_card(account_data: str) -> str:
-    """Функция принимает строку с данными карты или счёта и возвращает
-    маску аккаунта карты банка"""
+    """Функция принимает строку с данными карты или счёта с наименованием карты или счёта и возвращает
+    маску аккаунта карты банка с наименованием карты или счёта"""
     if isinstance(account_data, str):
         full_data_list: list = account_data.split()
         if len(full_data_list) > 0:

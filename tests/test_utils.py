@@ -1,7 +1,9 @@
-from src.utils import json_to_python_data
-import pytest
-from unittest.mock import patch, mock_open
 import json
+from unittest.mock import mock_open, patch
+
+import pytest
+
+from src.utils import json_to_python_data
 
 
 @pytest.mark.parametrize(
